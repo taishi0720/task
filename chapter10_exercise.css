@@ -28,12 +28,26 @@ main{
  margin-right: 0;
 }
 
-.image{
+.image1{
  height: 150px;
+ background-image: url(img/flow01.png);
  background-size: cover;
  background-position: bottom;
 }
 
+.image2{
+ height: 150px;
+ background-image: url(img/flow02.png);
+ background-size: cover;
+ background-position: bottom;
+}
+
+.image3{
+ height: 150px;
+ background-image: url(img/flow03.png);
+ background-size: cover;
+ background-position: bottom;
+}
 .box-step{
  position: absolute;
  top: 0;
