@@ -1,0 +1,550 @@
+*{
+ padding: 0;
+ margin: 0;
+ box-sizing: border-box;
+}
+
+header{
+ height: 70px;
+ width: 100%;
+ background-color: #EC715F;
+}
+
+.clearfix::after{
+ content: "";
+ display: block;
+ clear: both;
+}
+
+.header-item{
+ width: 1024px;
+ margin: 0 auto;
+ height:70px;
+}
+
+.header-logo{
+ height: 70px;
+ width: 140px;
+ background-image: url(img/logo.png);
+ background-size: cover;
+ background-position: center;
+ float: left;
+}
+
+/*text-alignだとdivの中のみで右揃えになるから、要素全てにするのはfloatで指定する。*/
+.nav-list{
+ float: right;
+}
+
+.nav-list-item{
+ display: inline-block;
+ font-size: 16px;
+ color: #FAFAFA;
+ margin: 0 30px;
+ list-style: none;
+ line-height: 70px;
+ float: left;
+}
+
+header i{
+ visibility:hidden;
+ padding: 5px 0;
+ color: #fff;
+ float: right;
+}
+.main-visual{
+ background-image: url(img/mv.png);
+ background-size: cover;
+ background-position: bottom;
+ width: 100%;
+ height: 650px;
+}
+
+.main-visual-contents{
+ /*contentsの中身はインライン要素なため*/
+ text-align: center;
+ padding: 200px;
+}
+
+.main-visual-text1{
+ color: #FAFAFA;
+ font-size: 64px;
+ margin-bottom: 10px;
+}
+
+.main-visual-text{
+ color: #FAFAFA;
+ font-size: 20px;
+}
+
+.portfolio{
+ width: 100%;
+ background-color: #ECEFF1;
+}
+
+.portfolio-headline{
+ font-size: 32px;
+ color: #000000;
+ padding-bottom: 8px;
+ text-align: center;
+ padding-top: 90px;
+
+}
+
+.portfolio-underline{
+  border-bottom: 3px solid #EC715F;
+  width: 70px;
+  margin: 0 auto;
+}
+
+.portfolio-text{
+ margin: 30px 0;
+ font-size: 16px;
+ color: #000000;
+ text-align: center;
+}
+
+.portfolio-box{
+ width: 920px;
+ padding-bottom: 90px;
+ margin: 0 auto;
+}
+
+.portfolio-box1{
+ background-image: url(img/sketch.jpg);
+ background-size: cover;
+ background-position: center;
+ width: 300px;
+ height: 250px;
+ float: left;
+ margin-right: 10px;
+ margin-bottom: 10px;
+}
+
+.portfolio-box2{
+ background-image: url(img/websuku.png);
+ background-size: cover;
+ background-position: center;
+ width: 300px;
+ height: 250px;
+ float: left;
+ margin-right: 10px;
+ margin-bottom: 10px;
+}
+
+.portfolio-box3{
+ background-image: url(img/write.jpg);
+ background-size: cover;
+ background-position: center;
+ width: 300px;
+ height: 250px;
+ float: left;
+ margin-bottom: 10px;
+}
+
+.portfolio-box4{
+ background-image: url(img/webcamp.png);
+ background-size: cover;
+ background-position: center;
+ width: 300px;
+ height: 250px;
+ float: left;
+ margin-right: 10px;
+}
+
+.portfolio-box5{
+ background-image: url(img/talk.jpg);
+ background-size: cover;
+ background-position: center;
+ width: 300px;
+ height: 250px;
+ float: left;
+ margin-right: 10px;
+}
+
+.portfolio-box6{
+ background-image: url(img/webcamp-mother.png);
+ background-size: cover;
+ background-position: center;
+ width: 300px;
+ height: 250px;
+ float: left;
+}
+
+.feature{
+ width: 100%;
+}
+
+.feature-headline{
+ font-size: 32px;
+ color: #000000;
+ padding-bottom: 8px;
+ text-align: center;
+ padding-top: 90px;
+
+}
+
+.feature-underline{
+  border-bottom: 3px solid #EC715F;
+  width: 70px;
+  margin: 0 auto;
+}
+
+.feature-text{
+ margin: 30px 0;
+ font-size: 16px;
+ color: #000000;
+ text-align: center;
+}
+
+.feature-strength{
+ width: 980px;
+ margin: 0 auto;
+ padding-bottom: 90px;
+}
+
+/*text-alignは子要素に対して反映される*/
+.strength{
+ /*position: relative;*/
+ width: 320px;
+ height: auto;
+ margin-right: 10px;
+ float: left;
+ text-align: center;
+}
+
+.strength:last-child{
+ margin: 0;
+}
+
+.strength-title{
+ font-size: 20px;
+ color: #000000;
+ margin: 10px auto;
+ text-align: center;
+}
+
+.strength-text{
+ font-size: 16px;
+ color: #000000;
+ text-align: left;
+}
+
+i{
+ /*display: inline-block;*/
+ /*position: absolute;*/
+ /*text-align: center;*/
+ font-size: 60px;
+}
+
+.profile{
+ width: 100%;
+ background-color: #ECEFF1;
+}
+
+.profile-headline{
+ font-size: 32px;
+ color: #000000;
+ padding-bottom: 8px;
+ text-align: center;
+ padding-top: 90px;
+
+}
+
+.profile-underline{
+  border-bottom: 3px solid #EC715F;
+  width: 70px;
+  margin: 0 auto;
+}
+
+.profile-text{
+ margin: 30px 0;
+ font-size: 16px;
+ color: #000000;
+ text-align: center;
+}
+
+.profile-box{
+ width: 1024px;
+ padding-bottom: 90px;
+ margin: 0 auto;
+}
+
+.profile-box1{
+ width: 512px;
+ height: auto;
+ float: left;
+}
+
+.profile-box1-image{
+ background-image: url(img/my-icon.jpg);
+ background-size: cover;
+ background-position: center;
+ border-radius: 50%;
+ width: 250px;
+ height: 250px;
+ margin: 0 auto;
+}
+
+.profile-box2{
+ width: 512px;
+ height: auto;
+ float: left;
+}
+
+.profile-box2-title{
+ font-size: 20px;
+ margin-bottom: 5px;
+}
+
+.profile-box2-text{
+ font-size: 16px;
+ color: #000000;
+ margin-bottom: 20px;
+}
+
+.profile-box2-text:last-child{
+ margin-bottom: 0;
+}
+
+.contact{
+ width: 100%;
+}
+
+.contact-headline{
+ font-size: 32px;
+ color: #000000;
+ padding-bottom: 8px;
+ text-align: center;
+ padding-top: 90px;
+
+}
+
+.contact-underline{
+  border-bottom: 3px solid #EC715F;
+  width: 70px;
+  margin: 0 auto;
+}
+
+.contact-text{
+ margin: 30px 0;
+ font-size: 16px;
+ color: #000000;
+ text-align: center;
+}
+
+.contact-box{
+ width: 800px;
+ padding-bottom: 90px;
+ margin: 0 auto;
+}
+.contact-box1{
+ width: 400px;
+ float: left;
+ margin: 0 auto;
+}
+
+.contact-box-left{
+ width: 130px;
+ margin: 0 auto;
+}
+.contact-box1-title{
+ font-size: 20px;
+ margin-bottom: 5px;
+}
+
+.contact-box1-title2{
+ margin-top: 20px;
+}
+
+u{
+ font-size: 16px;
+ color: #000000;
+}
+
+.contact-box2{
+ margin: 0 auto;
+ width: 400px;
+ height: auto;
+ float: left;
+}
+
+.contact-box-right{
+ width: 180px;
+ margin: 0 auto;
+}
+.contact-box2-title{
+ font-size: 20px;
+ margin-bottom: 5px;
+}
+
+.contact-box-right i{
+ margin-right: 20px;
+ font-size: 50px;
+}
+
+.contact-box-right i:last-child{
+ margin: 0;
+}
+
+footer{
+ background-color: #EC715F;
+ width: 100%;
+ height: 60px;
+ text-align: center;
+ line-height: 60px;
+}
+
+.footer-text{
+ color: #fafafa;
+ font-size: 16px;
+}
+
+@media screen and (max-width:767px) {
+  header{
+  	height: 50px;
+  }
+  .header-item{
+    height: 50px;
+    width: 90%;
+  }
+  .nav-list{
+   float: none;
+  }
+
+  .nav-list-item{
+   height: 0;
+   width: 0;
+   display: none;
+  }
+  .header-logo{
+   height: 50px;
+  }
+  header i{
+   visibility:visible;
+   font-size: 40px;
+  }
+  .main-visual-contents{
+  	width: 90%;
+  	padding: 0 5%;
+  	margin: 0 auto;
+  }
+  .main-visual{
+   background-image: url(img/code.png);
+   background-size: cover;
+   background-position: bottom;
+   width: 100%;
+   height: 650px;
+  }
+  .main-visual-text1{
+   font-size: 40px;
+   padding-top: 200px;
+  }
+  .main-visual-text{
+   font-size: 18px;
+  }
+  section{
+   width: 90%;
+   padding: 0 5%;
+   margin-right: 0;
+  }
+  .portfolio-box{
+    width: 90%;
+  }
+  .portfolio-box1{
+    float:none;
+    margin: 0 auto;
+    width: 0;
+    height: 0;
+    background-image: none;
+  }
+  .portfolio-box2{
+  	float:none;
+  	margin: 0 auto;
+  	margin-bottom: 10px;
+  }
+  .portfolio-box3{
+  	float:none;
+  	width: 0;
+    height: 0;
+  	margin: 0 auto;
+  	background-image: none;
+  }
+  .portfolio-box4{
+  	float:none;
+  	margin: 0 auto;
+  	margin-bottom: 10px;
+  }
+  .portfolio-box5{
+  	float:none;
+  	width: 0;
+    height: 0;
+  	margin: 0 auto;
+  	background-image: none;
+  }
+  .portfolio-box6{
+  	float:none;
+  	margin: 0 auto;
+  }
+  .feature-strength{
+    width: 90%;
+  }
+  .strength{
+  	float: none;
+  	margin: 0 auto;
+  	margin-bottom: 10px;
+  }
+
+  .strength:last-child{
+  	margin: 0 auto;
+    margin-bottom: 0;
+  }
+  .profile-box{
+    width: 90%;
+  }
+  .profile-box1{
+    float: none;
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+  .profile-box2{
+    float: none;
+    width: 90%;
+    text-align: center;
+  }
+  .contact-box{
+    width: 90%;
+  }
+  .contact-box1{
+  	width: 90%;
+    float: none;
+    text-align: center;
+  }
+  .contact-box2{
+  	width: 90%;
+    float: none;
+    text-align: center;
+  }
+  .contact-box2-title{
+    margin-top: 20px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
